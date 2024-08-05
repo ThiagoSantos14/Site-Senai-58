@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}     
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    background: #E6E6E6;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #B91D32;
+}
+
+.darkmode {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: -0.2%;
+    cursor: pointer;
+}
+
+nav {
+    width: 50%;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    background: #E30613;
+    border-radius: 10px;
+    margin-right: 3vh;
+}
+
+.top-logo {
+    display: flex;
+    flex-direction: row;
+    height: 7vh;
+    margin-left: 3vh;
+}
+
+.top-logo, img {
+    display: flex;
+    align-items: flex-end;
+    background: white;
+    border-radius: 10px;
+}
+
+.displayTopLogo {
+    display: flex;
+    flex-direction: row;
+    height: 7vh;
+    margin-left: 3vh;
+    mix-blend-mode:saturation;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+}
+
+.displayNavBarDark a {
+    color: black;
+}
+
+.displayNavBarWhite a {
+    color: white;
+}
+
+a:hover {
+    transform: scale(1.1);
+    transition: all 0.9s;
+    background: white;
+    border-radius: 30px;
+    color: black;
+}
+
+.carousel {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel img {
+    position: absolute;
+    width: 70%;
+    height: 60vh;
+    background: gray;
+    border-radius: 10px;
+}
+
+.fundo-title-center {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #B91D32;
+}
+
+.central-title {
+    width: 20%;
+    height: 10vh;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E30613;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.content-center {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cursos h2 {
+    display: flex;
+    justify-content: center;
+    background: #E30613;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 30vh;
+}
+
+.cursos iframe {
+    width: 100vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1vh;
+    border-radius: 10px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    gap: 100px;
+}
+
+.fundo-title-about {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #B91D32;
+}
+
+.title-about {
+    width: 10%;
+    height: 10vh;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E30613;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.text-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background: #B91D32;
+    padding: 10px;
+}
+
+.text-about h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 400px;
+    padding: 10px;
+}
+
+.displayTextAbout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background: #B91D32;
+    padding: 10px;
+}
+
+.displayTextAbout h3 {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 50vh;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+}
+
+footer {
+    width: 100%;
+    height: 23vh;
+    background: #E30613;
+    border-radius: 10px;
+    margin-top: 30vh;
+}
+
+.content-footer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #B91D32;
+}
+
+.content-footer ul {
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.content-footer li {
+    list-style-type: none;
+}
+
+.displayContentFooter {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #B91D32;
+}
+
+.displayContentFooter ul {
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.displayContentFooter li {
+    list-style-type: none;
+}
+
+.displayContentFooter a {
+    color: black;
+}
+
+.logo-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer img {
+    background: white;
+    border-radius: 10px;
+}
+
+.logo-footer p {
+    margin-top: 10px;
+}
+
+.displayLogoFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: saturation;
+}
+
+.textFooter {
+    color: black;
+}
+
+@media (max-width: 480px) {
+    .top-logo img {
+        height: 7vh;
+    }
+
+    nav a {
+        font-size: 8px;
+    }
+    
+    .carousel iframe {
+        width: 300px;
+    }
+
+    .central-title {
+        width: 260px;
+    }
+
+    .central-title h1 {
+        font-size: 20px;
+    }
+
+    .cursos iframe {
+        width: 290px;
+    }
+
+    .cursos h2 {
+        font-size: 13px;
+    }
+
+    .title-about {
+        width: 130px;
+    }
+
+    .title-about h1 {
+        font-size: 15px;
+    }
+
+    .text-about {
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-about h3 {
+        width: 100%;
+        height: 300px;
+    }
+
+    .about {
+        margin-top: 30vh;
+    }
+
+    .about h3 {
+        font-size: 15px;
+    }
+
+    .content-footer ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo-footer p {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+    nav a {
+        font-size: 10px;
+    }
+    
+    .carousel-center iframe {
+        width: 390px;
+    }
+
+    .central-title {
+        width: 290px;
+    }
+
+    .central-title h1 {
+        font-size: 20px;
+    }
+
+    .cursos iframe {
+        width: 370px;
+    }
+
+    .cursos h2 {
+        font-size: 15px;
+    }
+
+    .title-about {
+        width: 150px;
+    }
+
+    .title-about h1 {
+        font-size: 20px;
+    }
+
+    .text-about {
+        height: 50%;
+    }
+
+    .text-about h3 {
+        width: 500px;
+        height: 500px;
+    }
+
+    .about h3 {
+        font-size: 15px;
+    }
+
+    .content-footer ul {
+        margin-left: -33%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    nav a {
+        font-size: 15px;
+    }
+    
+    .carousel-center iframe {
+        width: 700px;
+    }
+
+    .central-title {
+        width: 290px;
+    }
+
+    .central-title h1 {
+        font-size: 20px;
+    }
+
+    .cursos iframe {
+        width: 600px;
+    }
+
+    .cursos h2 {
+        font-size: 20px;
+    }
+
+    .title-about {
+        width: 150px;
+    }
+
+    .title-about h1 {
+        font-size: 20px;
+    }
+
+    .text-about {
+        height: 50%;
+    }
+
+    .text-about h3 {
+        width: 500px;
+        height: 500px;
+    }
+
+    .about h3 {
+        font-size: 15px;
+    }
+
+    .content-footer ul {
+        margin-left: -13vh;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 800px) {
+    nav a {
+        font-size: 15px;
+    }
+    
+    .carousel-center iframe {
+        width: 700px;
+    }
+
+    .central-title {
+        width: 290px;
+    }
+
+    .central-title h1 {
+        font-size: 20px;
+    }
+
+    .cursos iframe {
+        width: 600px;
+    }
+
+    .cursos h2 {
+        font-size: 20px;
+    }
+
+    .title-about {
+        width: 150px;
+    }
+
+    .title-about h1 {
+        font-size: 20px;
+    }
+
+    .text-about {
+        height: 50%;
+    }
+
+    .text-about h3 {
+        width: 700px;
+    }
+
+    .content-footer ul {
+        margin-left: -13vh;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
+    nav a {
+        font-size: 15px;
+    }
+    
+    .carousel-center iframe {
+        width: 730px;
+    }
+
+    .central-title {
+        width: 290px;
+    }
+
+    .central-title h1 {
+        font-size: 20px;
+    }
+
+    .cursos iframe {
+        width: 650px;
+    }
+
+    .cursos h2 {
+        font-size: 20px;
+    }
+
+    .title-about {
+        width: 150px;
+    }
+
+    .title-about h1 {
+        font-size: 20px;
+    }
+
+    .text-about {
+        height: 50%;
+    }
+
+    .text-about h3 {
+        width: 730px;
+        height: 500px;
+    }
+
+    .about h3 {
+        font-size: 19px;
+    }
+
+    .content-footer ul {
+        margin-left: -13vh;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    nav a {
+        font-size: 15px;
+    }
+    
+    .carousel-center iframe {
+        width: 850px;
+    }
+
+    .central-title {
+        width: 290px;
+    }
+
+    .central-title h1 {
+        font-size: 20px;
+    }
+
+    .cursos iframe {
+        width: 800px;  
+    }
+
+    .cursos h2 {
+        font-size: 20px;
+    }
+
+    .title-about {
+        width: 150px;
+    }
+
+    .title-about h1 {
+        font-size: 20px;
+    }
+
+    .text-about {
+        height: 100%;
+    }
+
+    .text-about h3 {
+        width: 730px;
+        height: 400px;
+    }
+
+    .about h3 {
+        font-size: 19px;
+    }
+
+    .content-footer ul {
+        margin-left: -13vh;
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+    nav a {
+        font-size: 15px;
+    }
+    
+    .carousel-center iframe {
+        width: 850px;
+    }
+
+    .central-title {
+        width: 400px;
+        font-size: 15px;
+    }
+
+    .cursos iframe {
+        width: 800px;  
+    }
+
+    .cursos h2 {
+        font-size: 20px;
+    }
+
+    .title-about {
+        width: 200px;
+    }
+
+    .title-about h1 {
+        font-size: 25px;
+    }
+
+    .text-about {
+        height: 50%;
+    }
+
+    .text-about h3 {
+        width: 750px;
+        height: 500px;
+    }
+
+    .about h3 {
+        font-size: 19px;
+    }
+
+    .content-footer ul {
+        margin-left: -13vh;
+    }
+}
